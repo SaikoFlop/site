@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(171, 174, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    transform: translateX(-650px);
+}
+
+
+.contenedor {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    transform-origin: top center;
+    position: relative; 
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+      transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contenedor {
+      transform: scale(0.6);
+    }
+  }
+  
+
+
+.texto{
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    color:white;
+    position: absolute;
+    top:250px;
+    left:40px;
+    white-space: nowrap;
+}
+
+.cuerpecito {
+    width: 190px;
+    height: 220px;
+    background-color: rgba(13, 13, 13, 1);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.alita.izquierda {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(13, 13, 13, 1);
+    clip-path: polygon(45% 34%, 90% 20%, 92% 49%, 63% 61%, 35% 76%, 9% 89%, 20% 58%);
+    position: absolute;
+    left: -60px;
+    top: 25px;
+}
+
+.alita.derecha {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(13, 13, 13, 1);
+    clip-path: polygon(55% 34%, 10% 20%, 8% 49%, 37% 61%, 65% 76%, 91% 89%, 80% 58%);
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+
+.blanquito {
+    width: 160px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+}
+
+.copetito {
+    width: 255px;
+    height: 220px;
+    background-color: rgba(13, 13, 13, 1);
+    clip-path: polygon(60% 62%, 67% 89%, 50% 79%, 40% 92%, 28% 79%, 9% 89%, 23% 63%);
+    position: absolute;
+    left: -3px;
+    top: -118px;
+}
+
+.patitaIzquierda {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 151, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+}
+
+.patitaDerecha {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 151, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 120px;
+}
+
+.piquito {
+    width: 40px;
+    height: 20px;
+    background-color: rgb(255, 151, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    right: 180px;
+}
+
+.ojitoDerecho {
+    width: 10px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 175px;
+}
+
+.ojitoIzquierdo {
+    width: 10px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 215px;
+}
+
+@keyframes parpadeo {
+    0%, 100% {
+        height: 15px;
+    }
+    50% {
+        height: 1px;
+    }
+}
+
+.ojitoDerecho, .ojitoIzquierdo {
+    animation: parpadeo 1s infinite;
+}
+
+.cuerpecito2 {
+    width: 190px;
+    height: 220px;
+    background-color: rgba(13, 13, 13, 1);
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+}
+
+.alita.izquierda2 {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(13, 13, 13, 1);
+    clip-path: polygon(45% 34%, 90% 20%, 92% 49%, 63% 61%, 35% 76%, 9% 89%, 20% 58%);
+    position: absolute;
+    left: 240px;
+    top: 25px;
+}
+
+.alita.derecha2 {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(13, 13, 13, 1);
+    clip-path: polygon(55% 34%, 10% 20%, 8% 49%, 37% 61%, 65% 76%, 91% 89%, 80% 58%);
+    position: absolute;
+    right: -250px;
+    top: 25px;
+}
+
+.blanquito2 {
+    width: 160px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 315px;
+    top: 25px;
+}
+
+.copetito2 {
+    width: 255px;
+    height: 220px;
+    background-color: rgba(13, 13, 13, 1);
+    clip-path: polygon(60% 62%, 67% 89%, 50% 79%, 40% 92%, 28% 79%, 9% 89%, 23% 63%);
+    position: absolute;
+    left: 297px;
+    top: -118px;
+}
+
+.patitaIzquierda2 {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 151, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 315px;
+}
+
+.patitaDerecha2 {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 151, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: -180px;
+}
+
+.piquito2 {
+    width: 40px;
+    height: 20px;
+    background-color: rgb(255, 151, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    right: -120px;
+}
+
+.ojitoDerecho2 {
+    width: 10px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: -85px;
+    animation: parpadeo 1s infinite;
+}
+
+.ojitoIzquierdo2 {
+    width: 10px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: -123px;
+    animation: parpadeo 1s infinite;
+}
+
+.florecita {
+    width: 70px;
+    height: 85px;
+    background-color: rgb(159, 88, 226);
+    clip-path: polygon(39% 32%, 31% 29%, 23% 33%, 23% 39%, 27% 45%, 32% 46%, 36% 45%, 31% 52%, 25% 58%, 27% 65%, 34% 69%, 40% 68%, 44% 63%, 45% 59%, 48% 61%, 50% 65%, 55% 68%, 61% 65%, 65% 63%, 65% 56%, 60% 51%, 55% 47%, 58% 44%, 64% 42%, 64% 36%, 60% 28%, 54% 25%, 48% 30%, 43% 34%, 43% 38%);
+    position: absolute;
+    top: 5px;
+    right: -190px;
+}
+
+.florecita2 {
+    width: 70px;
+    height: 85px;
+    background-color: rgb(135, 73, 194);
+    transform: rotate(30deg);
+    clip-path: polygon(39% 32%, 31% 29%, 23% 33%, 23% 39%, 27% 45%, 32% 46%, 36% 45%, 31% 52%, 25% 58%, 27% 65%, 34% 69%, 40% 68%, 44% 63%, 45% 59%, 48% 61%, 50% 65%, 55% 68%, 61% 65%, 65% 63%, 65% 56%, 60% 51%, 55% 47%, 58% 44%, 64% 42%, 64% 36%, 60% 28%, 54% 25%, 48% 30%, 43% 34%, 43% 38%);
+    position: absolute;
+    top: 7px;
+    right: -190px;
+}
+
+.florecita3 {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 248, 110);
+    border-radius: 50%;
+    position: absolute;
+    top: 37px;
+    right: -160px;
+}
+
+.moñito {
+    width: 90px;
+    height: 80px;
+    background-color: rgb(245, 55, 55);
+    clip-path: polygon(45% 41%, 51% 37%, 58% 33%, 62% 34%, 63% 54%, 62% 58%, 54% 57%, 48% 52%, 42% 47%, 37% 53%, 31% 58%, 23% 58%, 21% 46%, 23% 34%, 32% 37%, 38% 39%, 43% 41%);
+    position: absolute;
+    top: 90px;
+    right: 150px;
+}
+
+.corazon1 {
+    width: 38px;
+    height: 38px;
+    background-color: rgb(252, 74, 74);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 212px;
+    animation: latido 1s infinite;
+}
+
+.corazon2 {
+    width: 38px;
+    height: 38px;
+    background-color: rgb(252, 74, 74);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 243px;
+    animation: latido 1s infinite;
+}
+
+.corazon3 {
+    width: 38px;
+    height: 38px;
+    background-color: rgb(252, 74, 74);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17.8px;
+    left: 228px;
+    animation: latido 1s infinite;
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1) rotate(45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(45deg);
+    }
+}
+
+
+
